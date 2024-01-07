@@ -1,0 +1,14 @@
+C:\DotNet_Curso\Megasena\obj\Debug\net8.0\Megasena.GeneratedMSBuildEditorConfig.editorconfig
+C:\DotNet_Curso\Megasena\obj\Debug\net8.0\Megasena.AssemblyInfoInputs.cache
+C:\DotNet_Curso\Megasena\obj\Debug\net8.0\Megasena.AssemblyInfo.cs
+C:\DotNet_Curso\Megasena\obj\Debug\net8.0\Megasena.csproj.CoreCompileInputs.cache
+C:\DotNet_Curso\Megasena\bin\Debug\net8.0\Megasena.exe
+C:\DotNet_Curso\Megasena\bin\Debug\net8.0\Megasena.deps.json
+C:\DotNet_Curso\Megasena\bin\Debug\net8.0\Megasena.runtimeconfig.json
+C:\DotNet_Curso\Megasena\bin\Debug\net8.0\Megasena.dll
+C:\DotNet_Curso\Megasena\bin\Debug\net8.0\Megasena.pdb
+C:\DotNet_Curso\Megasena\obj\Debug\net8.0\Megasena.dll
+C:\DotNet_Curso\Megasena\obj\Debug\net8.0\refint\Megasena.dll
+C:\DotNet_Curso\Megasena\obj\Debug\net8.0\Megasena.pdb
+C:\DotNet_Curso\Megasena\obj\Debug\net8.0\Megasena.genruntimeconfig.cache
+C:\DotNet_Curso\Megasena\obj\Debug\net8.0\ref\Megasena.dll
