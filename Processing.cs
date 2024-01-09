@@ -33,18 +33,62 @@ namespace Megasena
 
             for (int contador = 0; contador < valorSorteado.Length; contador++)
             {
-                valorSorteado[contador] = random.Next(1, 100);
+                int valorGerado = random.Next(1, 61);
+                bool incrementar = true; 
+
+                foreach(int numerosSorteado in valorSorteado)
+                {
+                    if(valorGerado == numerosSorteado)
+                    {
+                        incrementar = false;
+                    }
+                }
+
+                if(incrementar == true)
+                {
+                    valorSorteado[contador] = valorGerado;
+                }
             }
         }
 
         private void ApostarValores()
         {
+            List<int> numerosApostados = new List<int>();
+
             for (int contador = 0; contador < valorApostado.Length; contador++)
             {
-                Console.Write($"Digite o {contador + 1}º valor: ");
-                int valorConsole = Convert.ToInt32(Console.ReadLine());
+                bool valorValido = false;
 
-                valorApostado[contador] = valorConsole;
+                while (!valorValido)
+                {
+                    Console.Write($"Digite o {contador + 1}º valor: ");
+                    int valorConsole = Convert.ToInt32(Console.ReadLine());
+
+                    if (valorConsole >= 1 && valorConsole <= 60)
+                    {
+                        bool incrementar = true;
+                        foreach(int valor in numerosApostados)
+                        {
+
+                            if(valor == valorConsole)
+                            {
+                                incrementar = false;
+                                Console.WriteLine("Número inválido ou já apostado.");
+                            }
+                        }
+
+                        if(incrementar == true)
+                        {
+                            valorApostado[contador] = valorConsole;
+                            numerosApostados.Add(valorConsole);
+                            valorValido = true;
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Número inválido ou já apostado.");
+                    }
+                }
             }
         }
 

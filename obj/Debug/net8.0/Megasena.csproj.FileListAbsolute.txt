@@ -12,3 +12,4 @@ C:\DotNet_Curso\Megasena\obj\Debug\net8.0\refint\Megasena.dll
 C:\DotNet_Curso\Megasena\obj\Debug\net8.0\Megasena.pdb
 C:\DotNet_Curso\Megasena\obj\Debug\net8.0\Megasena.genruntimeconfig.cache
 C:\DotNet_Curso\Megasena\obj\Debug\net8.0\ref\Megasena.dll
+C:\DotNet_Curso\Megasena\obj\Debug\net8.0\Megasena.sourcelink.json
