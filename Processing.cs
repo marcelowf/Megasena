@@ -31,7 +31,7 @@ namespace Megasena
         {
             Random random = new Random();
 
-            for (int contador = 0; contador < valorSorteado.Length; contador++)
+            for (int contador = 0; contador < valorSorteado.Length;)
             {
                 int valorGerado = random.Next(1, 61);
                 bool incrementar = true; 
@@ -47,10 +47,7 @@ namespace Megasena
                 if(incrementar == true)
                 {
                     valorSorteado[contador] = valorGerado;
-                }
-                else
-                {
-                    contador--;
+                    contador++;
                 }
             }
         }
@@ -71,9 +68,9 @@ namespace Megasena
                     if (valorConsole >= 1 && valorConsole <= 60)
                     {
                         bool incrementar = true;
+
                         foreach(int valor in numerosApostados)
                         {
-
                             if(valor == valorConsole)
                             {
                                 incrementar = false;
@@ -110,7 +107,7 @@ namespace Megasena
                     }
                 }
             }
-
+            
             if (acertos >= valorSorteado.Length)
             {
                 Console.WriteLine("\nVocê acertou o jogo!");
