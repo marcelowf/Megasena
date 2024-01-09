@@ -48,6 +48,10 @@ namespace Megasena
                 {
                     valorSorteado[contador] = valorGerado;
                 }
+                else
+                {
+                    contador--;
+                }
             }
         }
 
@@ -73,7 +77,7 @@ namespace Megasena
                             if(valor == valorConsole)
                             {
                                 incrementar = false;
-                                Console.WriteLine("Número inválido ou já apostado.");
+                                Console.WriteLine("Número já apostado.");
                             }
                         }
 
@@ -86,7 +90,7 @@ namespace Megasena
                     }
                     else
                     {
-                        Console.WriteLine("Número inválido ou já apostado.");
+                        Console.WriteLine("Número inválido.");
                     }
                 }
             }
